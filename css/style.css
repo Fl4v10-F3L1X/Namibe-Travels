@@ -204,3 +204,33 @@ input{
         transition: .4s;
     }
 }
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav__link{
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+}
+
+.nav__link:hover{
+    color: var(--text-color);
+}
+
+.nav__close{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+/* show menu */
+.show-menu{
+    right: 0;
+}
