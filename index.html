@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!----================= REMIX ICONS ================-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
 
 
     <!----================= SWIPER CSS ================-->
@@ -21,6 +21,38 @@
     <title>Praias do Namibe</title>
 </head>
 <body>
-    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Viagem</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Página Inicial</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discover" class="nav__link">Descubra</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">Lugares</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Butão de Mudança de Tema-->
+                    <span class="change-theme-name">Modo Escuro</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
