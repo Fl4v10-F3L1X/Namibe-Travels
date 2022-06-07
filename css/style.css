@@ -1,14 +1,14 @@
-/*===================== VARIABLES CSS ====================*/
+/*===================== VARIÁVEIS CSS ====================*/
 :root{
     --header-height: 3rem;
 
-    /*========= COLORS ==========*/
-    /* Change favorite color to match images*/
-    /*Green dark 190 - Green 171 - Green Blue 200*/
+    /*========= CORES ==========*/
+    /* Altere a cor favorita para corresponder às imagens*/
+    /*Verde escuro 190 - Verde 171 - Verde Azul 200*/
 
     --hue-color:190;
 
-    /*HSL color mode*/
+    /*Modo de cor HSL*/
     --first-color: hsl(var(--hue-color), 64%, 22%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
     --first-color-alt: hsl(var(--hue-color), 64%, 15%);
@@ -21,7 +21,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
-    /*============= Font and typography ===========*/
+    /*============= Fonte e tipografia ===========*/
     --body-font: 'Open Sans', sans-serif;
     --title-font: 'Raleway', sans-serif;
     --biggest-font-size: 2.5rem;
@@ -32,11 +32,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font Weight ==========*/
+    /*========== Tamanho da fonte ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*=========== Margenes Bottom ==========*/
+    /*=========== Margens Inferiores ==========*/
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -50,7 +50,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 
-    /*=========== Hover overlay ==========*/
+    /*=========== Sobreposição de foco ==========*/
     --img-transition: .3s;
     --img-hidden: hidden;
     --img-scale: scale(1.1); 
@@ -69,9 +69,9 @@
     }
 }
 
-/*========= Variables Dark theme ========*/
+/*========= Variáveis ​​Tema escuro ========*/
 body.dark-theme{
-    /*HSL color mode*/
+    /*Modo de cor HSL*/
 
     --first-color-second: hsl(var(--hue-color), 54%, 12%);
     --title-color: hsl(var(--hue-color), 24%, 95%);
@@ -83,7 +83,7 @@ body.dark-theme{
 
 }
 
-/*============= Button Dark/Light ===========*/
+/*============= Botão Escuro/Claro ===========*/
 .nav__dark{
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@ body.dark-theme{
     font-size: var(--small-font-size);
 }
 
-/*============= BASE ===========*/
+/*============= BÁSICO ===========*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -165,7 +165,7 @@ input{
 }
 
 
-/*============= REUSABLE CSS CLASSES ===========*/
+/*============= REUTILIZAÇÃO DO CSS NAS CLASSES ===========*/
 .section{
     padding: 4.5rem 0 2.5rem;
 }
@@ -190,7 +190,7 @@ input{
 }
 
 
-/*============= HEADER ===========*/
+/*============= CABEÇALHO ===========*/
 .header{
     width: 100%;
     position: fixed;
@@ -267,12 +267,12 @@ input{
     cursor: pointer;
 }
 
-/* show menu */
+/* mostrar menu */
 .show-menu{
     right: 0;
 }
 
-/* Change background header */
+/* Alterar cabeçalho de plano de fundo */
 .scroll-header{
     background-color: var(--body-color);
     box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
@@ -284,7 +284,7 @@ input{
 }
 
 
-/* Active Link*/
+/* Link Activo */
 .active-link{
     position: relative;
     color: var(--title-color);
@@ -301,7 +301,7 @@ input{
 }
 
 
-/*============ HOME ==========*/
+/*============ PÁGINA INICIAL ==========*/
 .home__img{
     position: absolute;
     top: 0;
@@ -387,7 +387,7 @@ input{
 }
 
 
-/*============ BUTTONS ==========*/
+/*============ BOTÕES ==========*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -416,7 +416,7 @@ input{
     background: none;
 }
 
-/*============ ABOUT ==========*/
+/*============ SOBRE ==========*/
 .about__data{
     text-align: center;
 }
@@ -458,7 +458,7 @@ input{
     transform: var(--img-scale);
 }
 
-/*============ DISCOVER ==========*/
+/*============ DESCUBRA ==========*/
 .discover__card{
     position: relative;
     width: 200px;
@@ -499,7 +499,7 @@ input{
     background-image: none;
 }
 
-/*============ EXPERIENCE ==========*/
+/*============ EXPERIÊNCIA ==========*/
 .experience__container{
     row-gap: 2.5rem;
     justify-content: center;
@@ -580,7 +580,7 @@ input{
 }
 
 
-/*============ PLACES ==========*/
+/*============ LUGARES ==========*/
 .place__card,
 .place__img{
     height: 230px;
@@ -658,7 +658,7 @@ input{
     transform: var(--img-scale);
 }
 
-/*============ SUBSCRIBE ==========*/
+/*============ INSCREVER-SE ==========*/
 .subscribe__bg{
     background-color: var(--first-color-second);
     padding: 2.5rem 0;
@@ -692,7 +692,7 @@ input{
     color: var(--text-color);
 }
 
-/*============ SPONSORS ==========*/
+/*============ PATROCINADORES ==========*/
 .sponsor__container{
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     justify-items: center;
@@ -709,7 +709,7 @@ input{
     filter: invert(.5);
 }
 
-/*============ FOOTER ===========*/
+/*============ RODAPÉ ===========*/
 .footer__container{
     row-gap: 5rem;
 }
@@ -777,7 +777,7 @@ input{
     color: var(--text-color);
 }
 
-/*============ SCROLL UP ==========*/
+/*============ ROLAGEM PARA CIMA ==========*/
 .scrollup{
     position: fixed;
     right: 1rem;
@@ -799,12 +799,12 @@ input{
     opacity: 1;
 }
 
-/* Show scroll */
+/* Mostrar rolagem */
 .show-scroll{
     bottom: 5rem;
 }
 
-/*============= SCROLL BAR ==============*/
+/*============= BARRA DE ROLAGEM ==============*/
 ::-webkit-scrollbar{
     width: .60rem;
     background-color: var(--scroll-bar-color);
@@ -820,7 +820,7 @@ input{
 
 
 /*================ MEDIA QUERIES ================*/
-/* For small devices */
+/* Para pequenos dispositivos */
 @media screen and (max-with: 340px){
     .place__container{
         grid-template-columns: max-content;
@@ -850,7 +850,7 @@ input{
     }
 }
 
-/* For medium devices */
+/* Para dispositivos médios */
 @media screen and (min-width: 568px) {
     .video__container{
         display: grid;
@@ -1012,7 +1012,7 @@ input{
     }
 }
 
-/*For large devices*/
+/*Para dispositivos grandes*/
 @media screen and (min-width: 1024px) {
     .container{
         margin-left: auto;
@@ -1105,7 +1105,7 @@ input{
     }
 }
 
-/*For all screens on mobiles and destop*/
+/*Para todas as telas em dispositivos móveis e desktops*/
 @media screen and (min-height: 721px) {
     body{
         margin: 0;
